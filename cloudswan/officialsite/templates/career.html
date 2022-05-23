@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+        <link rel="stylesheet"  href="{% static 'css/static.css' %}">
+    <title>Career</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand col-md-5" href="career.html">
+            <img src="{%static 'images/logo1.png' %}" width="360px" style="padding-top:20px">
+        </a>
+        <div class="col-md-1"></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- aria -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- navbat-collapse -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/home">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/career">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/home#course">Tutorial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/conduct">Conduct</a>
+                </li>
+            </ul>
+            <button class="btn btn-info my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#registermodel"><i
+                    class="fas fa-sign-in-alt"></i>&nbsp;Sign-Up</button>&nbsp;
+            <button class="btn btn-info my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#loginmodel"><i
+                    class="fas fa-sign-in-alt"></i>Login</button>
+        </div>
+    </nav>
+    <section id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <img src="{%static 'images/graphic_careers.png' %}" class="img-fluid animated" alt="">
+                </div>
+                <div class="col-lg-5">
+                    <h1>YOUR CAREERS PATH</h1>
+                    <p class="text-white">We believe that our strength lies in our people and that they make the real
+                        difference.
+                        Each person is encouraged to take personal responsibility, and contribute actively to the
+                        long-term sustainable growth of the company.</p>
+                    <a href="#" class="btn-get-started scrollto">Lets Join hands</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main id="main">
+        <section id="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>"READY TO MAKE DIFFERENCE?"</h2>
+                    <p> CloudSwan can be a great place for you</p>
+                </div>&nbsp;
+                <div class="row">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="icon-box">
+                            <h4><a href="">Student / Early Career</a></h4>
+                            <p>Your job growth is important to us and we’re working hard to find the right opportunity
+                                that fits your long-term career goals.
+                                Find out when we’ll be at a campus near you.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 d-flex ">
+                        <div class="icon-box">
+                            <h4><a href="">Professionals</a></h4>
+                            <p>Explore a world of opportunity.
+
+                                Collaborate with the world’s leading companies.
+
+                                Take your ideas to the next level.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 d-flex ">
+                        <div class="icon-box">
+                            <h4><a href="">Executives</a></h4>
+                            <p>Work where you can lead transformation and follow your ideas. Be a game-changer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Latest">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-md-6 d-flex">
+                        <div class="icon-box">
+                            <h4><a href="">
+                                    <div class="icon">Latest Job Openings</div>
+                                </a></h4>
+                            <p>We are always looking for good candidates to join our team!.<br> We strongly encourage
+                                you to submit your resume to our resume database for future positions.
+                                <br>We will contact you if there are any suitable openings matching your skills and
+                                career aspirations.
+                            </p>
+                            <p class="text-danger">Post your updated resume to</p>
+                            <p class="text-danger">hr@cloudswansolutions.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+ <!--Footer-->
+    <footer id="footer" style="background-color: white">
+
+        <div class="container" style="padding-top: 50px;">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h3><img src="{%static 'images/clogo.png' %}" width="50%"></h3>
+                    <p>#171, B-Wing, Raj Complex, DPF Street, P N Palayam,Near Lakshmi Mills Stop,
+                        Coimbatore-37.<br><br>
+                        <strong>Phone: </strong> 8903835098<br>
+                        <strong>Email: </strong> contact@cloudswansolution.com<br>
+                        <strong>Website:</strong> www.cloudswansolution.com<br>
+                        <strong>India</strong>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h5 class="linked">Useful Links</h5>
+                    <ul>
+                        <li> <a class="review" href="index.html">Home</a></li>
+                        <li> <a class="review" href="#">Jobs</a></li>
+                        <li> <a class="review" href="#">Tools</a>
+                        <li> <a class="review" href="#">Tutorial</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4 class="linked">Our Services</h4>
+                    <ul>
+                        <li><a class="review" href="#">Web Design</a></li>
+                        <li><a class="review" href="#">Web Development</a></li>
+                        <li><a class="review" href="#">Product Management</a></li>
+                        <li><a class="review" href="#">Marketing</a></li>
+                        <li><a class="review" href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4 class="linked">Our Social Networks</h4>
+                    <ul>
+                        <li><a class="review" href="#">Twitter</a></li>
+                        <li><a class="review" href="#">Facebook</a></li>
+                        <li><a class="review" href="#">Instagram</a></li>
+                        <li><a class="review" href="#">Skype</a></li>
+                        <li><a class="review" href="#">Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section id="bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="design">
+                            Copyright 2022 ©<strong></strong>. All Rights Reserved</div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <div class="design">
+                            Designed by : <a href="index.html" style="color: yellow;">CloudSwan Solution</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </footer>
+
+
+    <!--LOGIN MODEL POPUP-->
+    <!-- Modal -->
+    <div class="modal fade" id="loginmodel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Welcome Back!!!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12 mb-3 padding-spl">
+                    <form id="logvalid" method="POST">
+                        <div class="form-input">
+                            <input type="text" class="log" name="txtfldlogEmailAddress" id="txtfldlogEmailAddress"
+                                placeholder="Enter Email Address..." onchange="emailcheck(this);">
+                        </div>
+                        <div class="form-input">
+                            <input type="password" class="log" name="txtfldlogpassword" id="txtfldlogpassword"
+                                placeholder="Password" onchange="passwordcheck(this)">
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="logcheckbox" id="logcheckbox">
+                            <label class="form-check-lable" for="checkbox">Remember Me</label>
+                        </div>
+                        <div class="form-login">
+                            <button type="button" class="btn btn-dark" name="btnlogin" id="btnlogin"
+                                onclick="loginvalidation();">Login</button>
+                            <hr>
+                        </div>
+
+                        <div class="loginlink">
+                            <a href="/forget" class="text-link"><small>Forgot Password?</small></a><br>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <!-- Modal --<div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>&nbsp;&nbsp;
+        <button type="button" class="btn btn-secondary">Save </button>
+    </div>-->
+        </div>
+    </div>
+</div>
+    <!-- REGISTER MODEL POPUP-->
+    <div class="modal fade" id="registermodel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create an Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12 mb-3 padding-spl">
+                        <form id="regvalid" method="POST">
+                            <div class="form-user">
+                                <input type="text" class="user" name="txtfldFirstname" id="txtfldFirstname"
+                                    placeholder="First Name.." onchange="letteronly(this);">
+                                <input type="text" class="user1" name="txtfldLastname" id="txtfldLastname"
+                                    placeholder="Last Name.." onchange="letter(this);">
+                            </div>
+                            <div class="form-user" style="margin-top: 10px !important">
+                                <input type="text" class="user" name="txtfldEmailAddress" id="txtfldEmailAddress"
+                                    placeholder="Email Address.." onchange="emailcheck(this);">
+                                <input type="text" class="user1" name="number" id="number" placeholder="Phone Number.."
+                                    onchange="pnumber(this);">
+                            </div>
+                            <div class="form-user" style="margin-top: 10px">
+                                <input type="password" class="user" name="txtfldpass" id="txtfldpass"
+                                    placeholder="Password.." onchange="passcheck(this)">
+                                <input type="password" class="user1" name="txtfldconfirmpass" id="txtfldconfirmpass"
+                                    placeholder="Confirm Password.."
+                                    onchange="passcheck(this); matchpass('txtfldpass','txtfldconfirmpass');">
+                            </div>
+                            <div class="form-checkbox">
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                                <label class="form-check-lable" for="checkbox">Remember Me</label>
+                            </div>
+                            <div class="form-register">
+                                <button type="button" class="btn btn-primary " name="btnregister" id="btnregister"
+                                  onclick="registervalidation();">Register Account</button>
+                                <hr>
+                              </div>
+                            <div class="form-google">
+                                <button type="button" class="btn btn-danger"><i class="fab fa-google"></i> Register With
+                                    Google</button>
+                            </div>
+                            <div class="form-facebook">
+                                <button type="button" class="btn btn-primary"><i class="fab fa-facebook-f"></i> Register
+                                    With
+                                    Facebook</button>
+                                <hr>
+                            </div>
+                            <div class="link">
+                                <a href="forget.html" class="text-link"><small>Forgot Password?</small></a><br>
+                                <a href="login.html" class="text-link"><small>Already have an Account!
+                                        Login?</small></a>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Modal --<div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary">Save </button>
+                    </div>-->
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{%static 'js/valid.js' %}"></script>
+    <script src="{%static 'js/dash.js' %}"></script>
+
+</body>
+
+</html>

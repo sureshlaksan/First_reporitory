@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet"  href="{% static 'css/static.css' %}">
+    <title>Forget password</title>
+</head>
+<body>
+    
+    <div class="container fg  center-align">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 item-white">
+                <h2 class="forget">Forget Your Password?</h2>
+                <p class="para">We get it, stuff happens,Just enter your email addressbelow and well send you a link to
+                    reset your password!</p>
+                <form id="forgetform" method="POST">
+                    <div class="form-input">
+                        <input type="text" class="log" name="txtfldEmailAddress" id="txtfldEmailAddress"
+                            placeholder="Enter Email Address..." onchange="emailcheck(this);">
+                    </div>
+                    <div class="form-login">
+                        <button type="button" class="btn btn-warning "name="forgivevalid" id="forgivevalid" onclick="forgive('txtfldEmailAddress');">Reset Password</button>
+                    </div>&nbsp;
+                    <div class="link">
+                        <a href="register.html" class="text-link"><small>Create an Account!</small></a><br>
+                        <a href="login.html" class="text-link"><small>Already have an account? login!</small></a>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="{%static 'js/valid.js' %}"></script>
+  <script src="{%static 'js/dash.js' %}"></script>
+  
+</body>
+</html>

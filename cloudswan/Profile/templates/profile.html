@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!--boxicon CDN Link-->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"  href="{% static 'css/dash1.css' %}">
+  <title>CloudSwan | Solution Development</title>
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">CloudSwan</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="/dashadmin">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="/profile" class="active">
+          <i class='bx bxs-user-circle'></i>
+          <span class="links_name">Profile Management</span>
+        </a>
+      </li>
+      <li>
+        <a href="/dashcourse">
+          <i class='bx bxs-book'></i>
+          <span class="links_name">Course</span>
+        </a>
+      </li>
+      <li>
+        <a href="/tutorial">
+          <i class='bx bxs-briefcase'></i>
+          <span class="links_name">Tutorial Management</span>
+        </a>
+      </li>
+      <li>
+        <a href="/settings">
+          <i class='bx bx-cog'></i>
+          <span class="links_name">Setting</span>
+        </a>
+      </li>
+      <li class="log_out">
+        <a href="#">
+          <i class='bx bx-log-out'></i>
+          <span class="links_name">Log out</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <!--span class="dashboard">Dashboard</span-->
+        <i class='bx bx-message' style="font-size:28px; margin-left:15px; margin-top:3px"></i>
+        <i class='bx bx-bell' style="font-size:28px; margin-left:15px; margin-top:1px"></i>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search'></i>
+      </div>
+      
+      <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          <i class="fa fa-user"></i> &nbsp; Logger name
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Profile</a>
+          <a class="dropdown-item" href="#">Password Change</a>
+          <a class="dropdown-item" href="/">Logout</a>
+        </div>
+      </div>
+      
+      </div>
+    </nav>
+    <div class="home-content">
+      <div class="container"> 
+        {% if success_reg %}
+        {{ success_reg }}<br/>
+        {% endif %}
+        <div class="card " >
+          <form id="profilevalid" name="profilevalid"  method="POST" >
+            <div class="col-md-12 mt-5 text-center"> 
+            
+              <h1 class="text-dark">Profile Registration</h1> 
+              <button type="button" class="btn btn-success " name="btnprosave" id="btnprosave" 
+              onclick="operateProfile();" >
+               <i class="fa fa-save"></i>
+              </button>  <small>->Click to Save</small>
+            </div>
+          <div class="row vertical-divider m-5">   
+          <div class="col-md-6">
+            {% csrf_token %}
+             <div class="form-group">
+              <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                        <label for="pfname" class="control-label  pull-right text-right">First Name
+                          <small class="text-danger">(*)</small> 
+                         </div>
+                       <div class="col-md-6 col-sm-6 col-xs-6"> 
+                        <input type="hidden" name="id" id="id"/>
+                        <input type="text"  class="form-control"  name="pfname" id="pfname" maxlength="20" autofocus  /> 
+                        </div>
+                        </div>
+                  </div>
+
+
+                  <div class="form-group">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                              <label for="pemail" class="control-label  pull-right text-right">Email
+                                <small class="text-danger">(*)</small> 
+                               </div>
+                             <div class="col-md-6 col-sm-6 col-xs-6">  
+                              <input type="text"  class="form-control"  name="pemail" id="pemail" maxlength="20"   /> 
+                              </div>
+                              </div>
+                        </div>
+
+
+                        <div class="form-group">
+                          <div class="row">
+                          <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <label for="ppass" class="control-label  pull-right text-right">Password
+                                      <small class="text-danger">(*)</small> 
+                                     </div>
+                                   <div class="col-md-6 col-sm-6 col-xs-6">  
+                                    <input type="password"  class="form-control"  name="ppass" id="ppass" maxlength="20"   /> 
+                                    </div>
+                                    </div>
+                              </div>
+
+
+            </div>
+            <div class="col-md-6">
+
+
+              <div class="form-group">
+                <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                          <label for="dfSelfName" class="control-label  pull-right text-right">Last Name 
+                           </div>
+                         <div class="col-md-6 col-sm-6 col-xs-6">  
+                          <input type="text"  class="form-control"  name="plname" id="plname" maxlength="20"  /> 
+                          </div>
+                          </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="row">
+                      <div class="col-md-6 col-sm-6 col-xs-6">
+                                <label for="pphone" class="control-label  pull-right text-right">Phone No. 
+                                 </div>
+                               <div class="col-md-6 col-sm-6 col-xs-6">  
+                                <input type="text"  class="form-control"  name="pphone" id="pphone" maxlength="20"  /> 
+                                </div>
+                                </div>
+                          </div>    
+
+
+                          <div class="form-group">
+                            <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                      <label for="pconfirmpass" class="control-label  pull-right text-right">Confirm Password
+                                        <small class="text-danger">(*)</small> 
+                                       </div>
+                                     <div class="col-md-6 col-sm-6 col-xs-6">  
+                                      <input type="password"  class="form-control"  name="pconfirmpass" id="pconfirmpass" maxlength="20"   /> 
+                                      </div>
+                                      </div>
+                                </div>
+
+            </div>
+            </div>
+            </form>
+
+            <div class="row">
+              <div class="col-md-12 table-responsive">
+              
+              <table class="table table-striped table-bordered table-sm table-hover scrolldown" id="dataTable" width="100%" cellspacing="0">  
+                <thead class="thead-dark">  
+                  <tr class="bg-primary text-white text-center" >  
+
+                      <th>First Name</th>  
+                      <th>Last Name</th> 
+                      <th>Email</th> 
+                      <th>Phone No.</th> 
+                      <th>Password</th> 
+                      <th>Confirm Password</th>
+                      <th>Options</th>   
+                  </tr>  
+                </thead>  
+              <tbody>
+              {% for profile in profiledetails %}  <!-- FOR EACH METHOD - Iterate-->
+                <tr>  
+                  
+                  <td>{{ profile.pfname }}</td>  
+                  <td>{{ profile.plname }}</td>  
+                  <td>{{ profile.pemail }}</td> 
+                  <td>{{ profile.pphone }}</td>  
+                  <td>{{ profile.ppass }}</td>  
+                  <td>{{ profile.pconfirmpass }}</td>   
+                  <td align="center">
+                    <button type="button" class="btn btn-secondary"  id="profileEdit" data-id="{{ profile.id }}" 
+                    onclick="profileEdit(this);"><i class="fa fa-edit"></i></button> 
+                    <a href="/deleteprofile/{{ profile.id }}"><button type="button" class="btn btn-danger" 
+                     ><i class="fa fa-trash"></i></button>  
+                    </a>
+                  </td>
+                    
+                </tr>  
+              {% endfor %}  
+                  </tbody>  
+              </table> 
+              
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    <script src="{% static 'js/dash.js' %}"></script> 
+  
+</body>
+
+</html>
+</body>

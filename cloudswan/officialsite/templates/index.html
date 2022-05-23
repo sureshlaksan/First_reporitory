@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet"  href="{% static 'css/static.css' %}">
+    <title>CloudSwan | Solution Development</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand col-md-5" href="career.html">
+            <img src="{%static 'images/logo1.png' %}" width="360px" style="padding-top:20px">
+        </a>
+        <div class="col-md-1"></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- aria -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- navbat-collapse -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/home">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/career">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#course">Tutorial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/conduct">Conduct</a>
+                </li>
+            </ul>
+            <button class="btn btn-info my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#registermodel"><i
+                    class="fas fa-sign-in-alt"></i>&nbsp;Sign-Up</button>&nbsp;
+            <button class="btn btn-info my-2 my-sm-0" id="webdashlogin" type="submit" data-toggle="modal" data-target="#loginmodel"><i
+                    class="fas fa-sign-in-alt"></i>Login</button>
+        </div>
+    </nav>
+
+    <div class="container-fluid mp-3">
+        <div>
+            <!-- BODY -->
+            <div id="demo" class="carousel slide" data-ride="carousel" style="margin-top: 85px;">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{%static 'images/pic1.jpg' %}" width="100%" alt="Los Angeles" class="cousrelSlideImg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{%static 'images/pic5.jpg' %}" width="100%" alt="Chicago" class="cousrelSlideImg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{%static 'images/pic2.jpg' %}" width="100%" alt="New York" class="cousrelSlideImg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>&nbsp;
+
+        <!-- Headings -->
+        <div class="row">
+            <div class="col-md-12 center-align">
+                <h3 class="text" style="font-weight: 900; color:#37517e;">COURSE | PREPARATION |DEVELOPMENT | TESTING |
+                    DEPLOYMENT</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 center-align">
+                <p class="text-dark" style="font-weight: bold;">By Xortican Technologies</p>
+            </div>
+        </div>
+        <!-- Vision -->
+        <div class="row">
+            <div class="col-md-6 center-align vision">
+                <img src="{% static 'images/vi.jpg' %}" class="img-fluid" style="border-radius: 10px;" alt="image">
+            </div>
+            <div class="col-md-6 vision">
+                <h4 style="font-weight: bold; color: #fff;">VISION:</h4>
+                <p style="color: #fff;"><i>Our vision is to be the well-regarded IT service provoder by delivering long
+                        term value to all
+                        stackholders. We want to offer our customers an unforgettable experience, high quality services
+                        and
+                        all our support to future collaborations.</i></p>
+                </p>
+            </div>
+        </div>
+        <!-- Mission -->
+        <div class="row">
+            <div class="col-md-6 center-align mission">
+                <img src="{% static 'images/mi.jpg' %}" class="img-fluid" style="border-radius: 10px;" alt="image">
+            </div>
+            <div class="col-md-6 mission">
+                <h4 style="font-weight: bold; color:#fff;">MISSION:</h4>
+                <p style="color: #fff;"><i>We are dedicated to providing the best Quality, Value and
+                        Service to meet our customers needs. We put hands together to
+                        produce excellent services in the field of IT services with
+                        maximum efforts driven towards customer satisfaction. Our
+                        mission is to bring cost effective IT Services to all business
+                        verticals with commitment to fair, ethical and legal business
+                        practices by:</i>
+                </p>
+                <p style="color: #fff;"><i>* Achieve the benefits of innovation without increasing
+                        their IT expenditure.</i></p>
+                <p style="color: #fff;"><i>* Combining our experience and expertise to align their
+                        business and technology goals.</i></p>
+                <p style="color: #fff;"><i>* Adhering to industry standard business processes.</i></p>
+                <p style="color: #fff;"><i>* Focusing on ethical business practices.</i></p>
+            </div>
+        </div>&nbsp;
+    <section id="cliens" class="cliens section-bg">
+    <div class="container">
+        <div class="section-title"><br>
+            <h2 style="margin-top: -75px;">
+                
+                COURSE OFFERS
+                
+            </h2>
+            <h4><strong>BECOME AN AGENT OF SIGNIFICANCE- WORK WITH US</strong></h4><br>
+            <div class="row aos-init aos-animate" data-aos="zoom-in">
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'images/selium.png' %}" class="img-fluid" alt>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'images/webdesign.png' %}" class-"img-fluid" alt>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'images/dm.png' %}" class-"img-fluid" alt>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'images/java.png' %}" class-"img-fluid" alt>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'images/spring.png' %}" class-"img-fluid" alt>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'images/spring.png' %}" class-"img-fluid" alt>
+                </div-->
+            </div> 
+            <div class="row aos-init aos-animate" data-aos="zoom-in"><br>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'images/sql.png' %}" class-"img-fluid" alt>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'images/python.png' %}" class-"img-fluid" alt>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'images/django.png' %}" class-"img-fluid" alt>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'images/flask.png' %}" class-"img-fluid" alt>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'images/aws.png' %}" class-"img-fluid" alt>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'images/aws.png' %}" class-"img-fluid" alt>
+                </div>
+                
+            </div-->       
+        </div>
+    </div>
+    </section>
+        
+
+        <!-- Course Head -->
+        <div class="row">
+            <div class="col-md-12 center-align">
+                <h2 class="text" id="trending";><u>TRENDING COURSE PACKAGES</u></h2>
+            </div>
+        </div>&nbsp;
+        <section id="course">
+            <div class="container mb-3" style="padding-top: 40px;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card" "width:350px" style='border-radius:0rem !important'>
+                            <img class="card-img-top" src="{% static 'images/Python_logo.png' %}" alt="Card image"
+                                style="width: 75%;margin-top: 30px;margin-left: 45px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Full Stack Python Development</h5>
+                                <p class="bg-secondary text-white" style="padding-left: 5px !important;">Course
+                                    Duration:
+                                </p>
+                                <p class="bg-light text-dark"><i class="far fa-calendar-alt"></i> 2Months | <i
+                                        class="far fa-clock"></i> 45 days</p>
+                                <h6 class="question"><i>What will i learn?</i></h6>
+                                <p><i class="fas fa-check-double"></i> Python Full stack development training covers
+                                    HTML5,
+                                    CSS3, Bootstrap 5, jQuery, and ReactJS. Sequences and File Operations, Functions,
+                                    OOPs,
+                                    Modules and Handling Exceptions, frameworks and more...</p>
+                                    <div class="wrapper" style="margin-top: 15px;">
+                                        <a href="#" class="btn btn-warning ">View Details</a>
+                                    </div>    
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="col-md-4">
+                        <div class="card" "width:350px" style='border-radius:0rem !important'>
+                            <img class="card-img-top" src="{%static 'images/java.jpg' %}"  alt="Card image"
+                                style="width: 75%;margin-top: 30px;margin-left: 45px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Full Stack Java Development</h5>
+                                <p class="bg-secondary text-white" style="padding-left: 5px !important;">Course
+                                    Duration:
+                                </p>
+                                <p class="bg-light text-dark"><i class="far fa-calendar-alt"></i> 2Months | <i
+                                        class="far fa-clock"></i> 45 days</p>
+                                <h6 class="question"><i>What will i learn?</i></h6>
+                                <p><i class="fas fa-check-double"></i> Java Full stack development training covers
+                                    HTML5,
+                                    CSS3, Bootstrap 5, jQuery, and ReactJS. Sequences and File Operations, Functions,
+                                    OOPs,
+                                    Modules and Handling Exceptions, frameworks and more...</p>
+                                    <div class="wrapper" style="margin-top: 15px;">
+                                        <a href="#" class="btn btn-warning ">View Details</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="col-md-4">
+                        <div class="card" "width:350px" style='border-radius:0rem !important'>
+                            <img class="card-img-top" src="{%static 'images/j2ee.jpg' %}" alt="Card image"
+                                style="width: 75%;margin-top: 30px;margin-left: 45px;">
+                            <div class="card-body">
+                                <h5 class="card-title">J2EE-Frameworks Development</h5>
+                                <p class="bg-secondary text-white" style="padding-left: 5px !important;">Course
+                                    Duration:
+                                </p>
+                                <p class="bg-light text-dark"><i class="far fa-calendar-alt"></i> 2Months | <i
+                                        class="far fa-clock"></i> 15 days</p>
+                                <h6 class="question"><i>What will i learn?</i></h6>
+                                <p><i class="fas fa-check-double"></i> ....</p>
+                                 
+                                <div class="wrapper" style="margin-top: 15px;">
+                                    <a href="#" class="btn btn-warning ">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-11 right-align">
+                    <a href="/course" class="btn btn-info">More Details</a>
+                </div>
+                <div class="col-md-1"></div><br><br>
+            </div>
+        </section>
+                      
+        <main id="creativity">
+            <div class="section-title">
+                <h2 style="margin-top: -30px;">
+                    
+                    WHAT WE ARE ?
+                    
+                </h2>
+                <h4><strong>Creativity in all direction</strong></h4>
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6">
+                        <div class="show">
+
+                            <p><i>
+                                    Cloud Swan solution is a software engineering solutions
+                                    provider offering reliable software solutions in domains such as
+                            </p></i>
+                            <ul>
+                                <li>
+                                    <i class="ri-check-double-line"></i>
+                                    <i>Knowledge Management</i>
+                                </li>
+                                <li>
+                                    <i class="ri-check-double-line"></i>
+                                    <i>Healthcare and Telecom</i>
+                                </li>
+                                <li>
+                                    <i class="ri-check-double-line"></i>
+                                    <i>Search technologies</i>
+                                </li>
+                            </ul>
+                            <h3><img src="{% static 'images/clogo.png' %}" width="50%"></h3>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="show">
+
+                            <p><i>
+                                    Cloud Swan specializes in providing complex domains too and to operationalize
+                                    and
+                                    support your IT platform
+                                    round the clock.We believe our responsibilities extend beyond business. That is
+                                    why
+                                    we provide assistance
+                                    to some of the more socially and economically depressed sectors of the
+                                    communities
+                                    in which we work.
+                                    And that is why we behave ethically and honestly in all our interactions – with
+                                    our
+                                    clients, our partners
+                                    and our employees</i>
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="ri-check-double-line"></i>
+                                    <i>Information Technology</i>
+                                </li>
+                                <li>
+                                    <i class="ri-check-double-line"></i>
+                                    <i>Software Services</i>
+                                </li>
+                                <li>
+                                    <i class="ri-check-double-line"></i>
+                                    <i>Quality Assurance</i>
+                                </li>
+                                <li>
+                                    <i class="ri-check-double-line"></i>
+                                    <i>Technical</i>
+                                </li>
+                                <li>
+                                    <i class="ri-check-double-line"></i>
+                                    <i>Application</i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="bta"  class="bta" >
+                <div class="container-fluid aos-init aos-animate" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-lg-12 text-center ">
+                            <a class="trend-btn align-middle" href="#">Explore All Programs</a>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <div class="container">
+                <div class="section-title">
+                    <h2 style="margin-top: -30px;">WHAT WE DO</h2>
+                    <h6>We are team with big ambitions.Our Objective is to create stunning web experience and software products that makes our 
+                        clients successful and their users happy.With relentless attention to detail , we turn ideas into a finely-tuned digital reality.</h6>
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-6">
+                        <div class="show">
+                            <img src="{%static 'images/What-we-do.jpg' %}" width="100%" style="margin-top:50px" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="show">
+                            <div class="con">
+                                <h3 class="text-info"><strong>WE CREATE</strong></h3>
+                                <p><i>
+                                    "Time, space, reality" they have most of it described. But when it come to business, 
+                                    it's a whole different world. What is the type of business you run, or you are in, the
+                                     problems that come across is immense.
+                                </i></p>
+                            </div>
+                            <div class="con">
+                                <h3 class="text-info"><strong>WE LOOK TO THE FUTURE</strong></h3>
+                                <p><i>
+                                    What you really wanted is to find a real solution for the problem what you are facing. 
+                                    We at CloudSwan don't just create softwares or test them, we create solution what you 
+                                    wanted for your business.
+                                </i></p>
+                            </div>
+                            <div class="con">
+                                <h3 class="text-info"><strong>WE FIND A SOLUTION</strong></h3>
+                                <p><i>
+                                    Today, tomorrow, no matter when you need it, how you need it, we are there with the solution 
+                                    for your problems. You have a business, you may have problems, and if you have problems, 
+                                    that where we come to action.
+                                </i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section id="cta"  class="cta" >
+            <div class="container aos-init aos-animate" data-aos="zoom-in">
+                <div class="row">
+                    <div class="col-lg-9 text-left text-lg-start">
+                        <h3>YOUR CAREER PATH</h3>
+                        <h4 class="text-warning">Latest Job Openings</h4>
+                        <p>We are always looking for good candidates to join our team!. We strongly encourage you to
+                            submit your
+                            resume to our resume database for future positions. We will contact you if there are any
+                            suitable openings
+                            matching your skills and career aspirations.
+                            <br>
+                            <br>
+                            Post your updated resume to
+                        </p>
+                        <h4 class="text-warning">hr@cloudswansolution.com</h4>
+                    </div>
+                    <div class="col-lg-3 cta-btn-container text-center ">
+                        <a class="path-btn align-middle" href="/career">Careers</a>
+                        <a class="path-btn align-middle" href="/conduct">Conduct</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer id="footer" style="background-color: white">
+
+            <div class="container" style="padding-top: 50px;">
+                <div class="row">
+    
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3><img src="{%static 'images/clogo.png' %}" width="50%"></h3>
+                        <p>#171, B-Wing, Raj Complex, DPF Street, P N Palayam,Near Lakshmi Mills Stop,
+                            Coimbatore-37.<br><br>
+                            <strong>Phone: </strong> 8903835098<br>
+                            <strong>Email: </strong> contact@cloudswansolution.com<br>
+                            <strong>Website:</strong> www.cloudswansolution.com<br>
+                            <strong>India</strong>
+                        </p>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h5 class="linked">Useful Links</h5>
+                        <ul>
+                            <li> <a class="review" href="/home">Home</a></li>
+                            <li> <a class="review" href="#">Jobs</a></li>
+                            <li> <a class="review" href="#">Tools</a>
+                            <li> <a class="review" href="#">Tutorial</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4 class="linked">Our Services</h4>
+                        <ul>
+                            <li><a class="review" href="#">Web Design</a></li>
+                            <li><a class="review" href="#">Web Development</a></li>
+                            <li><a class="review" href="#">Product Management</a></li>
+                            <li><a class="review" href="#">Marketing</a></li>
+                            <li><a class="review" href="#">Graphic Design</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4 class="linked">Our Social Networks</h4>
+                        <ul>
+                            <li><a class="review" href="#">Twitter</a></li>
+                            <li><a class="review" href="#">Facebook</a></li>
+                            <li><a class="review" href="#">Instagram</a></li>
+                            <li><a class="review" href="#">Skype</a></li>
+                            <li><a class="review" href="#">Linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <section id="bottom">
+                <div class="container">
+                    <div class="row">
+    
+                        <div class="col-md-6">
+                            <div class="design">
+                                Copyright 2022 ©<strong></strong>. All Rights Reserved</div>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4">
+                            <div class="design">
+                                Designed by : <a href="index.html" style="color: yellow;">CloudSwan Solution</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </footer>
+
+
+    <!--LOGIN MODEL POPUP-->
+    <!-- Modal -->
+    <div class="modal fade" id="loginmodel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Welcome Back!!!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12 mb-3 padding-spl">
+                        <form id="logvalidation" method="POST">
+                            {% csrf_token %}
+                            <div class="form-input">
+                                <input type="text" class="log" name="txtfldlogEmailAddress" id="txtfldlogEmailAddress"
+                                    placeholder="Enter Email Address..." onchange="emailcheck(this);">
+                            </div>
+                            <div class="form-input">
+                                <input type="password" class="log" name="txtfldlogpassword" id="txtfldlogpassword"
+                                    placeholder="Password" onchange="passwordcheck(this)">
+                            </div>
+                            <div class="form-checkbox">
+                                <input type="checkbox" name="logcheckbox" id="logcheckbox">
+                                <label class="form-check-lable" for="checkbox">Remember Me</label>
+                            </div>
+                            <div class="form-login">
+                                <button type="button" class="btn btn-dark" name="btnlogin" id="btnlogin"
+                                    onclick="loginvalidation();">Login</button>
+                                <hr>
+                            </div>
+
+                            <div class="loginlink">
+                                <a href="#registermodel" class="text-link"><small>Create an account</large></a><br>
+                                <a href="/forget" class="text-link"><small>Forgot Password?</small></a><br>
+                                
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <!-- Modal --<div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>&nbsp;&nbsp;
+            <button type="button" class="btn btn-secondary">Save </button>
+        </div>-->
+            </div>
+        </div>
+    </div>
+    <!-- REGISTER MODEL POPUP-->
+    <div class="modal fade" id="registermodel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create an Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12 mb-3 padding-spl">
+                        <form id="regvalid" method="POST">
+                            <div class="form-user">
+                              <input type="text" class="user" name="txtfldFirstname" id="txtfldFirstname" placeholder="First Name.."
+                                onchange="letteronly(this);">
+                              <input type="text" class="user1" name="txtfldLastname" id="txtfldLastname" placeholder="Last Name.."
+                                onchange="letter(this);">
+                            </div>
+                            <div class="form-user" style="margin-top: 10px !important">
+                              <input type="text" class="user" name="txtfldEmailAddress" id="txtfldEmailAddress"
+                                placeholder="Email Address.." onchange="emailcheck(this);">
+                              <input type="text" class="user1" name="number" id="number" placeholder="Phone Number.."
+                                onchange="pnumber(this);">
+                            </div>
+                            <div class="form-user" style="margin-top: 10px">
+                              <input type="password" class="user" name="txtfldpass" id="txtfldpass" placeholder="Password.."
+                                onchange="passcheck(this)">
+                              <input type="password" class="user1" name="txtfldconfirmpass" id="txtfldconfirmpass"
+                                placeholder="Confirm Password.." onchange="matchpass(this);">
+                            </div>
+                  
+                            <div class="form-Radio" style="margin-top: 10px;">
+                              <label class="choose">Choose yours:</label>&nbsp;&nbsp;
+                              <input type="radio" name="category" id="Student" value="Student" > Student
+                              &nbsp;&nbsp;&nbsp;
+                              <input type="radio" name="category" id="Trainer"  value="Trainer" > Trainer
+                              &nbsp;&nbsp;&nbsp;
+                              <input type="radio" name="category" id="Admin" value="Admin" > Admin
+                              &nbsp;&nbsp;&nbsp;
+                              <div id="msg"></div>
+                            </div>
+                            <div class="form-register">
+                                <button type="button" class="btn btn-primary " name="btnregister" id="btnregister"
+                                  onclick="registervalidation();">Register Account</button>
+                                <hr>
+                              </div>
+                            <div class="form-google">
+                              <button type="button" class="btn btn-danger"><i class="fab fa-google"></i> Register
+                                With
+                                Google</button>
+                            </div>
+                            <div class="form-facebook">
+                              <button type="button" class="btn btn-primary"><i class="fab fa-facebook-f"></i>
+                                Register
+                                With
+                                Facebook</button>
+                              <hr>
+                            </div>
+                            <div class="link">
+                              <a href="/forget" class="text-link"><small>Forgot Password?</small></a><br>
+                              <a href="login.html" class="text-link"><small>Already have an Account!
+                                  Login?</small></a>
+                            </div>
+                        </div>
+                        </form>
+                </div>
+            </div>
+            <!-- Modal --<div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary">Save </button>
+                    </div>-->
+        </div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{%static 'js/valid.js' %}"></script>
+    <script src="{%static 'js/dash.js' %}"></script>
+</body>
+
+</html>

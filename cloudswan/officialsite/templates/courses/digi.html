@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet"  href="{% static 'css/static.css' %}">
+    <link rel="stylesheet"  href="{% static 'css/course.css' %}">
+
+    <title>CloudSwan | Solution Development</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand col-md-5" href="career.html">
+            <img src="{%static 'images/logo1.png' %}" width="360px" style="padding-top:20px">
+        </a>
+        <div class="col-md-1"></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- aria -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- navbat-collapse -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/home">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/career">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#course">Tutorial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/conduct">Conduct</a>
+                </li>
+            </ul>
+            <button class="btn btn-info my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#registermodel"><i
+                    class="fas fa-sign-in-alt"></i>&nbsp;Sign-Up</button>&nbsp;
+            <button class="btn btn-info my-2 my-sm-0" id="webdashlogin" type="submit" data-toggle="modal" data-target="#loginmodel"><i
+                    class="fas fa-sign-in-alt"></i>Login</button>
+        </div>
+    </nav>
+
+    <main id="main">
+        <section id="breadcrumbs" class="breadcrumbs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <ol>
+                            <li>
+                                <a href="/home"> Home</a>
+                            </li>
+                            <li>
+                                Digital Marketing
+                            </li>
+                        </ol>
+                        <h2>DIGITAL MARKETING TRADING COURSE</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <div class-"row">
+                            <table class="table table-borderless" width="20%">
+                                <tbody>
+                                    <tr>
+                                        <td align="middle" rowspan="2">
+                                            <h1 class="text-primary">
+                                                <i class="fa-solid fa-phone"></i>
+                                            </h1>
+                                        </td>
+                                        <td>
+                                            <strong>Have a queries? Ask us</strong>
+                                        </td>
+                                    </tr>
+                                    <td>
+                                        <p class="text-danger">
+                                            <b>0422 - 2243835 / 8903835098</b>
+                                        </p>
+                                    </td>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio-details" class="portfolio-details">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-8">
+                        <div
+                            class="portfolio-details-slider swiper swiper-initialized swiper-horizontal swiper-pointer-events">
+                            <div class="swiper align-items-center">
+                                <div class="row">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="{%static 'images/digitalm.jpg' %}">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="portfolio-info">
+                            <h3>Course information</h3>
+                            <ul>
+                                <li>
+                                    <strong>Category</strong>
+                                    ": Marketing"
+                                </li>
+                                <li>
+                                    <strong>Title</strong>
+                                    ": Digital Marketing"
+                                </li>
+                            </ul>
+                            <h5 class="text-info">ABOUT THIS COURSE</h5>
+                            <p>
+                                "The Digital Marketing course by CloudSwan will help you gain expertise in various
+                                digital marketing aspects such as Keyword Planning,
+                                SEO, Search Engine Marketing, Email Marketing, Affiliate Marketing, Social Media
+                                Marketing, and Google Analytics.
+                                This Digital Marketing certification training is a gateway towards your career as a
+                                Digital Marketing professional."
+                            </p>
+                            <h5 class="text-info">Why should you take Digital Marketing Certification Training?</h5>
+                            <div class="faq-list">
+                                <ul>
+                                    <li>
+                                        <a data-bs-toggle="collapse" data-bs-target="#faq-list-1" class="collapsed">
+                                            "No. 1"
+                                            <i class="bi bi-chevron-down">
+
+                                            </i>
+                                            <i class="bi bi-chevron-up">
+
+                                            </i>
+                                        </a>
+                                        <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                                            <p>
+                                                Businesses spend two-third of their advertising budget on digital
+                                                channels (Gartner)
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">
+                                            "No. 2"
+                                            <i class="bx bx-chevron-down icon-show">
+
+                                            </i>
+                                            <i class="bx bx-chevron-down icon-close">
+
+                                            </i>
+                                        </a>
+                                        <div id="faq-list-2" class="collapse show" data-bs-parent=".faq-list">
+                                            <p>
+                                                Digital Marketing industry is growing at a rate of 25-30% p.a., creating
+                                                plenty of job opportunities
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">
+                                            "No. 3"
+                                            <i class="bx bx-chevron-down icon-show">
+
+                                            </i>
+                                            <i class="bx bx-chevron-down icon-close">
+
+                                            </i>
+                                        </a>
+                                        <div id="faq-list-3" class="collapse show" data-bs-parent=".faq-list">
+                                            <p>
+                                                The average salary of a mid-level Digital Marketer in India is ₹8-30 LPA
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-description"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio-details" class="portfolio-details">
+            <div class="container">
+                <div class="section-title">
+                    <h2>
+                        Instructor-led Java Frameworks Training classes
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="member d-flex align-items-start row">
+                            <div class="col-md-8">
+                                <table class="table  table-striped table-condensed" width="100%" cellspacing="0"
+                                    cellpadding="0" border="0">
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="3" style="width:15vh">
+                                                <img src="{%static 'images/instructor.png' %}" class="img-fluid" alt width="100">
+                                            </td>
+                                            <td rowspan="2">MON To FRI</td>
+                                            <td align="right">Morning |</td>
+                                            <td align="left">Timings: 10:30 AM to 01:30 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right">Evening |</td>
+                                            <td align="left">Timings: 3.00 AM to 06:00 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">SAT & SUN</td>
+                                            <td class="text-danger" align="center" colspan="2">---------------------
+                                                Holidays ---------------------</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="member0info">
+                                    <h4>Course Price At</h4>
+                                    <h1 class="text-dark"><i aria-hidden="true">0.00</i></h1>
+                                    <small class="text-success"><b>Training + Certification + Study material +
+                                            Placements</b></small><br>
+                                    <h4>Duration: 45 Days</h4>
+                                </div><br>
+                                <div class="text-center">
+                                    <a href="contact.html">
+                                        <button type="button" class="btn btn-warning">ENROLL NOW</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member d-flex align-items-start row">
+                            <div class="col-md-4">
+                                <h3 class="text-secondary">Training Includes</h3>
+                                <table class="table table-borderless">
+                                    <tr>
+                                        <td>* 2 Days Session</td>
+                                    </tr>
+                                    <tr>
+                                        <td>* 5 Model Tests</td>
+                                    </tr>
+                                    <tr>
+                                        <td>* Preparation Guide</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1 Day session on Interview Tips</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 Days Session on FAQs and Answers</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5 Mock Interviews and Guidance</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-4 d-flex align-items-stretch">
+                                <div class="icon-box">
+                                    <h4 class="text-secondary">
+                                        <i class="bi bi-pc-display-horizontal"></i>
+                                        &nbsp; Instructor-led Sessions 
+                                    </h4>
+                                    <p>
+                                        Online & Offline Instructor-Led Classes.
+                                        Weekend Class sessions of 3 hours .
+                                    </p>
+                                    <h4 class="text-secondary">
+                                        <i class="bi bi-file-text"></i>
+                                        &nbsp; Assessments
+                                    </h4>
+                                    <p>
+                                        Each class will be followed by a test to assess your learning.
+                                    </p>
+                                    <h4 class="text-secondary">
+                                        <i class="bi bi-award"></i>
+                                        &nbsp; Certification
+                                    </h4>
+                                    <p>
+                                        Sucessfully complete your final course project and CloudSwan will certify
+                                        you as Digital Marketing Professional.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <table class="table table-warning table-borderless d-flex align-items-start"
+                                    width="20%">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <strong>Feel Free to contact for course enrollment</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <strong>
+                                                    <a class="text-danger text-danger-hover  "
+                                                        href="tel:0422 - 2243835">
+                                                        <i class="bi bi-telephone">
+
+                                                        </i>
+                                                        "&nbsp;0422 - 2243835"
+                                                    </a>
+                                                    " / "
+                                                    <a class="text-danger text-danger-hover  " href="tel:8903835098">
+                                                        <i class="bi bi-telephone"></i>
+                                                        "&nbsp;8903835098"
+                                                    </a>
+                                                </strong>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         
+
+        <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+        <div class="container" >
+          <h2 class="text-left">Course curriculum</h2>
+          
+          <div class="faq-list">
+            <ul>
+              <li  >
+                <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Getting Started With SEO<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list"> 
+                  <p>
+                    <b>Topics:</b> 
+                  </p>
+                  <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                    <li> What is Internet SEO marketing</li>
+<li> Working with web search</li>
+<li> How Search engine Works</li>
+<li> Various Method in internet marketing</li>
+<li> Google Algorithm Concept</li>
+<li> Latest updates and Verification</li>
+<li> Importance Google Page Rank</li>
+<li> Working with SEO tools</li>
+<li> Art of SEO content</li>
+<li> Panda and Penguin Algorithm Updates</li>
+                    </ul></div>
+                </div>
+              </li>
+  
+              <li >
+                <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Analysis of Keyword and Optimize <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    <b>Topics:</b> 
+                  </p>
+                  <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px"> 
+                    <li> Overview of keyword research</li>
+<li> How Google Analytics works</li>
+<li> Various types of Keywords</li>
+<li> What is Local SEO services</li>
+<li> How to Preparing a keyword</li>
+<li> Keywords based tools</li>
+<li> Working with Webmaster tools</li>
+                      </ul>
+                    </div>
+                </div>
+              </li>
+  
+              <li >
+                  <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Understanding On-Page Optimization <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                    <p>
+                      <b>Topics:</b> 
+                    </p>
+                    <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">  
+                        <li> Website designing and build website</li>
+<li> Importance of Website</li>
+<li> Working with User experience development</li>
+<li> Basics of Onsite Optimization</li>
+<li> Importance of web Domain names and SEO content writing</li>
+<li> Working with file optimization</li>
+<li> Working with Title tag optimization</li>
+<li> How to keywords inserted</li>
+<li> Working with meta tags</li>
+<li> Understanding the meta tags Optimization</li>
+<li> Working Header Optimization</li>
+<li> Working with Anchor Links</li>
+<li> Understanding Internal link Strategy</li>
+                        </ul>
+                      </div>
+                  </div>
+                </li>
+   
+
+
+                <li  >
+                    <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed"> Basics of HTML <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                      <p>
+                        <b>Topics:</b> 
+                      </p>
+                      <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                          
+                        <li> Introduction to HTML</li>
+<li> Header and Footer Tags</li>
+<li> What is 404 Implementation</li>
+<li> Understanding SEO guidelines</li>
+<li> What are the Major Search engines</li>
+<li> Define Google Sandbox</li>
+<li> Determine Website Architecture</li>
+<li> Working with Heading tags</li>
+<li> How to optimize Heading Optimization</li>
+<li> How to optimize Title Tag Optimization</li>
+<li> Working with Image Optimization</li>
+<li> Working with URL Optimization</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+       
+      
+                  <li  >
+                    <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Off-Page Optimization
+                      <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                      <p>
+                        <b>Topics:</b> 
+                      </p>
+                      <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                         
+                        <li> How Inbound Linked and Backlinks works.</li>
+                        <li> Understanding Inbound Links used in Search Engine Optimize.</li>
+                        <li> What are the Natural and Unnatural Linked</li>
+                        <li> Define Backlinks and various types in backlinks.</li>
+                        <li> Difference between Nofollow and Dofollow linking</li>
+                        <li> Importance of Non-Editorial Linked and Editorial Linked.</li>
+                        <li> Understanding the Dofollow links and authority sites.</li>
+                        <li> Why Concept of PR is used & works with high define backlinks.</li>
+                        <li> How Website submit on various Search Engines.</li>
+                        <li> Importance of .ORG linked</li>
+                        <li> Working Backlinks from different websites.</li>
+                        <li> How DMOZ submit and guidelines.</li>
+                        <li> Define Directories, Various types in directory & Directory Submit.</li>
+                        <li> What are the Business lists with real NAP on various city specific business directories.</li>
+                        <li> Various high rate Social Bookmarked Websites and submit.</li>
+                        <li> How SEO Content write & article submit.</li>
+                        <li> Working with blogs and prepare article.</li>
+                        <li> How Blog posting works with Google crawling.</li>
+                        <li> What are the value of high rate blog comment on the article.</li>
+                        <li> Why Classified backlinks to good quality posting websites.</li>
+                        <li> Define Press Release and submissions.</li>
+                        <li> Define Alexa rank & Alexa integrating.</li>
+                        <li> Working backlinks in web 2.0.</li>
+                        <li> How to Youtube optimize and internal linked from broadcasting sites.</li>
+                        <li> PowerPoint and shared documents and submit.</li>
+                        <li> What are the Internal Links from questions and answer sites.</li>
+                        <li> How to Backlink Anchor Text for SEO</li>
+                        <li> Working with Link building and Social Network platform.</li>
+                        <li> How Google Plus content optimize.</li>
+      
+                         
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+      
+      
+      
+                  <li  >
+                    <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-6" class="collapsed">Technical Content Writing
+                      <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
+                      <p>
+                        <b>Topics:</b> 
+                      </p>
+                      <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                         
+                        <li> How used Website structure optimize high loading.</li>
+                        <li> What are the uses of CSS and Javascript Sprite.</li>
+                        <li> How to short the HTTP call.</li>
+                        <li> Define Content Deliver Network management.</li>
+                        <li> Factors of mobile Responsive Website design .</li>
+                        <li> Search Engine URL rewrite technique with .HTACCESS.</li>
+                        <li> Factors of Redirection.</li>
+                        <li> 301 Permanent in Redirection and 302 Temporary in Redirection.</li>
+                        <li> How to checking Duplicate Content and Canonical.</li>
+                        <li> Working with Rel Canonical tag implements.</li>
+                        <li> Cannibal issue and fix.</li>
+                        <li> 404 Broken links analysis and redirection.</li>
+                        <li> Custom 403, 404 page develop.</li>
+                        <li> Factors of sitemaps .xml, and .html file.</li>
+                        <li> How to RSS file prepare.</li>
+                        <li> Robots.txt file prepared and uses.</li>
+                        <li> Quality analysis of Internal Links, Google webmaster tool.</li>
+      
+      
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+      
+      
+      
+      
+                  <li  >
+                    <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-7" class="collapsed">Google Analytics
+                      <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="faq-list-7" class="collapse" data-bs-parent=".faq-list">
+                      <p>
+                        <b>Topics:</b> 
+                      </p>
+                      <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                        <li> Define Google Search and Webmaster.</li>
+                        <li> Understanding Integrating Google Search Concept and website or blog.</li>
+                        <li> How Google Search Concept works.</li>
+                        <li> MS Bing Webmaster Integrating.</li>
+                        <li> Define Google Analytics and advantages.</li>
+                        <li> Define SEO Data Analytics and Data Mining.</li>
+                        <li> Different Reporting from Google Analytics.</li>
+                         
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+       
+                  <li  >
+                    <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-8" class="collapsed">Website Discovery and Analysis
+                      <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="faq-list-8" class="collapse" data-bs-parent=".faq-list">
+                      <p>
+                        <b>Topics:</b> 
+                      </p>
+                      <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                         
+                        <li> Site analysis and audit.</li>
+                        <li> Site in various SEO tools.</li>
+                        <li> Various types of Google Algorithm updates.</li>
+                        <li> How to recover from Panda updates.</li>
+                        <li> How to recover from Penguin updates.</li>
+                        <li> How to recover from Hummingbird updates.</li>
+                        <li> How to recover from Pigeon updates.</li>
+                        <li> How to recover from EMD updates.</li>
+      
+      
+                          
+                         
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+      
+      
+      
+      
+      
+                  <li  >
+                    <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-9" class="collapsed">Adwords of Google
+                      <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="faq-list-9" class="collapse" data-bs-parent=".faq-list">
+                      <p>
+                        <b>Topics:</b> 
+                      </p>
+                      <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                        <li> Adwords and online ad introduction</li>
+                        <li> Basics of campaign and adword account</li>
+                        <li> Set up of PPC campaign</li>
+                        <li> Ad formats of adwords</li>
+                        <li> CTR rates</li>
+                        <li> Issues of ad quality and policies</li>
+                        <li> Impressions</li>
+                        <li> Conversion acquaintance</li>
+                        <li> Cost conservation knowledge</li>
+                        <li> Network ads of search and display</li>
+                        <li> Targeting adwords</li>
+                        <li> Performance optimization</li>
+                        <li> Google ad display</li>
+                        <li> Tracking of conversion</li>
+                        <li> Monitoring performance</li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+      
+       
+      
+                  <li  >
+                    <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-10" class="collapsed">Yahoo and Bing Ads
+                      <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="faq-list-10" class="collapse" data-bs-parent=".faq-list">
+                      <p>
+                        <b>Topics:</b> 
+                      </p>
+                      <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                         
+                        <li> Ad groups and campaign introduction</li>
+                        <li> Keywords, ad groups and campaigns introduction</li>
+                        <li> Estimations of traffic and bidding</li>
+                        <li> Creation of ads</li>
+                        <li> Choosing of right keyword</li>
+                        <li> Optimization of campaign</li>
+                        <li> Reports of Bing ads</li>
+                        <li> Intelligence tools of Bing ads</li>
+                        <li> Campaign analytics tracking conversion</li>
+                        <li> Budgeting of Bing ads</li>
+                        <li> Optimization editor campaign of Bing ads</li>
+                        <li> Billing of Bing ads</li>
+                        <li> Account management tip of Bing ads</li>
+                          
+                         
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+      
+      
+                  <li  >
+                      <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-11" class="collapsed">SMO
+                        <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                      <div id="faq-list-11" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                          <b>Topics:</b> 
+                        </p>
+                        <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                           
+                            <li>SMO-Social Media Optimization</li> 
+                            <li> About social media</li>
+                            <li> Social media in business</li>
+                            <li> Integration with websites</li>
+                            <li> Types of social media</li>
+                            <li> User engagement statics</li>
+                            <li> Social Media Organization surveys</li>
+                            <li> Social media platforms</li>
+                            <li> Vision and brand decoding</li>
+                            <li> Goals and missions</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  
+      
+      
+      
+      
+                  <li  >
+                    <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-12" class="collapsed">Marketing Over Facebook
+                      <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="faq-list-12" class="collapse" data-bs-parent=".faq-list">
+                      <p>
+                        <b>Topics:</b> 
+                      </p>
+                      <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                         
+                        <li> Branding a service or a product</li>
+                        <li> Business leveraging</li>
+                        <li> Creating a profile</li>
+                        <li> Creating a page</li>
+                        <li> Creating a group</li>
+                        <li> Creating an advertisement</li>
+                        <li> Creating an event</li>
+                        <li> Face book updates</li>
+                        <li> Resources in Face book</li>
+                        <li> Case studies</li>
+                        <li> Integration</li>
+                        <li> Hidden buttons and Layout</li>
+                        <li> Tricks and creation in Face book</li>
+                        <li> Hash tags</li>
+                        <li> Stories, posts, like events.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+       
+      
+                  <li>
+                      <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-13" class="collapsed">Marketing Over Twitter
+                        <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                      <div id="faq-list-13" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                          <b>Topics:</b> 
+                        </p>
+                        <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                           
+                            <li> Building business and brand</li>
+                            <li> Creating a profile</li>
+                            <li> Content of search engine</li>
+                            <li> User engagements in twitter page</li>
+                            <li> Hash tags</li>
+                            <li> Networking sites</li>
+                            <li> Related Case studies</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+   
+                    <li>
+                        <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-14" class="collapsed">Marketing Over LinkedIn
+                          <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-14" class="collapse" data-bs-parent=".faq-list">
+                          <p>
+                            <b>Topics:</b> 
+                          </p>
+                          <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                             
+                            <li> Linked In</li>
+                            <li> Business orientation</li>
+                            <li> Role of HR department</li>
+                            <li> Linked In role</li>
+                            <li> Creating a profile</li>
+                            <li> Creating a company page</li>
+                            <li> Creating a group</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+     
+                      <li>
+                        <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-15" class="collapsed">YouTube Marketing
+                          <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-15" class="collapse" data-bs-parent=".faq-list">
+                          <p>
+                            <b>Topics:</b> 
+                          </p>
+                          <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                             
+                            <li> Creating a profile</li>
+                            <li> Creating company profile</li>
+                            <li> Social buttons</li>
+                            <li> Video posting</li>
+                            <li> Keywords</li>
+                            <li> Advertising through videos</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+
+
+                      <li>
+                        <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-16" class="collapsed">Marketing in Social Book
+                          <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-16" class="collapse" data-bs-parent=".faq-list">
+                          <p>
+                            <b>Topics:</b> 
+                          </p>
+                          <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                             
+                            <li> Social book marking</li>
+                                <li> Its use in branding</li>
+                                <li> Press release and slide share</li>
+                                <li> Flicker and Instagram</li>
+                                <li> Article submission</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+
+
+
+                      <li>
+                        <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-17" class="collapsed">Blogs
+                          <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-17" class="collapse" data-bs-parent=".faq-list">
+                          <p>
+                            <b>Topics:</b> 
+                          </p>
+                          <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                            <li> Creation of bogs</li>
+                            <li> Creating a page</li>
+                            <li> Word press</li>
+                            <li> Adding of posts</li>
+                            <li> Blogging.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-18" class="collapsed">Other Media
+                          <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-18" class="collapse" data-bs-parent=".faq-list">
+                          <p>
+                            <b>Topics:</b> 
+                          </p>
+                          <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                            <li> Class</li>
+                            <li> Social media</li>
+                            <li> Development of social media in managing information aggregators</li>
+                            <li> Social media definition</li>
+                            <li> Google alert blogs</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+     
+                      <li>
+                        <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-19" class="collapsed">Social Media Features
+                          <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-19" class="collapse" data-bs-parent=".faq-list">
+                          <p>
+                            <b>Topics:</b> 
+                          </p>
+                          <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                            <li> Copy right</li>
+                            <li> In-house guidelines</li>
+                            <li> Legal side in Social Media</li>
+                            <li> Blogs</li>
+                            <li> Implications in trademarks</li>
+                            <li> Tumbler</li>
+                            <li> Blogger</li>
+                            <li> Set up</li>
+                            <li> Service influences</li>
+                            <li> Word press</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+
+
+                      <li>
+                        <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-20" class="collapsed">SMM Postings
+                          <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-20" class="collapse" data-bs-parent=".faq-list">
+                          <p>
+                            <b>Topics:</b> 
+                          </p>
+                          <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                            <li> Bookmarking</li>
+                            <li> Setup and management</li>
+                            <li> Majority female target audience</li>
+                            <li> Profile interest</li>
+                            <li> LinkedIn tips</li>
+                            <li> Guides</li>
+                            <li> Visual social media</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+
+
+                      <li>
+                        <i class="bx bx-plus-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-21" class="collapsed">SMM
+                          <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-21" class="collapse" data-bs-parent=".faq-list">
+                          <p>
+                            <b>Topics:</b> 
+                          </p>
+                          <div> <ul style="line-height: 0px;list-style-type: disc;padding-left:50px">
+                            <li>SMM and SEO</li> 
+                            <li> Hangouts</li>
+                            <li> SEO</li>
+                            <li> SEO determination</li>
+                            <li> Authorship</li>
+                            <li> Set-up Google+</li>
+                            <li> Company profile</li>
+                            <li> Video platforms</li>
+                            <li> Channel managing content</li>
+                            <li> You tube</li>
+                            <li> Organic search</li>
+                            <li> Google’s role</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+     
+      
+  
+  
+            </ul>
+          </div>
+  
+        </div>
+      </section><!-- End Frequently Asked Questions Section -->
+
+
+
+    </main>
+
+
+
+
+    </main>
+
+
+
+
+
+
+    <!--Footer-->
+    <footer id="footer" style="background-color: white">
+
+        <div class="container" style="padding-top: 50px;">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h3><img src="{%static 'images/clogo.png' %}" width="50%"></h3>
+                    <p>#171, B-Wing, Raj Complex, DPF Street, P N Palayam,Near Lakshmi Mills Stop,
+                        Coimbatore-37.<br><br>
+                        <strong>Phone: </strong> 8903835098<br>
+                        <strong>Email: </strong> contact@cloudswansolution.com<br>
+                        <strong>Website:</strong> www.cloudswansolution.com<br>
+                        <strong>India</strong>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h5 class="linked">Useful Links</h5>
+                    <ul>
+                        <li> <a class="review" href="/home">Home</a></li>
+                        <li> <a class="review" href="#">Jobs</a></li>
+                        <li> <a class="review" href="#">Tools</a>
+                        <li> <a class="review" href="#">Tutorial</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4 class="linked">Our Services</h4>
+                    <ul>
+                        <li><a class="review" href="#">Web Design</a></li>
+                        <li><a class="review" href="#">Web Development</a></li>
+                        <li><a class="review" href="#">Product Management</a></li>
+                        <li><a class="review" href="#">Marketing</a></li>
+                        <li><a class="review" href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4 class="linked">Our Social Networks</h4>
+                    <ul>
+                        <li><a class="review" href="#">Twitter</a></li>
+                        <li><a class="review" href="#">Facebook</a></li>
+                        <li><a class="review" href="#">Instagram</a></li>
+                        <li><a class="review" href="#">Skype</a></li>
+                        <li><a class="review" href="#">Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section id="bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="design">
+                            Copyright 2022 ©<strong></strong>. All Rights Reserved</div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <div class="design">
+                            Designed by : <a href="index.html" style="color: yellow;">CloudSwan Solution</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </footer>
+
+
+<!--LOGIN MODEL POPUP-->
+    <!-- Modal -->
+    <div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Welcome Back!!!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12 mb-3 padding-spl">
+                        <form id="logvalid" method="POST" >
+                            {% csrf_token %}
+                            <div class="form-input">
+                                <input type="text" class="log" name="txtfldlogEmailAddress" id="txtfldlogEmailAddress"
+                                    placeholder="Enter Email Address..." onchange="emailcheck(this);">
+                            </div>
+                            <div class="form-input">
+                                <input type="password" class="log" name="txtfldlogpassword" id="txtfldlogpassword"
+                                    placeholder="Password" onchange="passwordcheck(this)">
+                            </div>
+                            <div class="form-checkbox">
+                                <input type="checkbox" name="logcheckbox" id="logcheckbox">
+                                <label class="form-check-lable" for="checkbox">Remember Me</label>
+                            </div>
+                            <div class="form-login">
+                                <button type="button" class="btn btn-dark" name="btnlogin" id="btnlogin"
+                                    onclick="loginvalidation();">Login</button>
+                                <hr>
+                            </div>
+
+                            <div class="loginlink">
+                                <a href="#registermodel" class="text-link"><small>Create an account</large></a><br>
+                                <a href="/forget" class="text-link"><small>Forgot Password?</small></a><br>
+                                
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <!-- Modal --<div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>&nbsp;&nbsp;
+            <button type="button" class="btn btn-secondary">Save </button>
+        </div>-->
+            </div>
+        </div>
+    </div>
+    <!-- REGISTER MODEL POPUP-->
+    <div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create an Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12 mb-3 padding-spl">
+                        <form id="regvalid" method="POST">
+                            <div class="form-user">
+                              <input type="text" class="user" name="txtfldFirstname" id="txtfldFirstname" placeholder="First Name.."
+                                onchange="letteronly(this);">
+                              <input type="text" class="user1" name="txtfldLastname" id="txtfldLastname" placeholder="Last Name.."
+                                onchange="letter(this);">
+                            </div>
+                            <div class="form-user" style="margin-top: 10px !important">
+                              <input type="text" class="user" name="txtfldEmailAddress" id="txtfldEmailAddress"
+                                placeholder="Email Address.." onchange="emailcheck(this);">
+                              <input type="text" class="user1" name="number" id="number" placeholder="Phone Number.."
+                                onchange="pnumber(this);">
+                            </div>
+                            <div class="form-user" style="margin-top: 10px">
+                              <input type="password" class="user" name="txtfldpass" id="txtfldpass" placeholder="Password.."
+                                onchange="passcheck(this)">
+                              <input type="password" class="user1" name="txtfldconfirmpass" id="txtfldconfirmpass"
+                                placeholder="Confirm Password.." onchange="matchpass(this);">
+                            </div>
+                  
+                            <div class="form-Radio" style="margin-top: 10px;">
+                              <label class="choose">Choose yours:</label>&nbsp;&nbsp;
+                              <input type="radio" name="category" id="Student" value="Student" > Student
+                              &nbsp;&nbsp;&nbsp;
+                              <input type="radio" name="category" id="Trainer"  value="Trainer" > Trainer
+                              &nbsp;&nbsp;&nbsp;
+                              <input type="radio" name="category" id="Admin" value="Admin" > Admin
+                              &nbsp;&nbsp;&nbsp;
+                              <div id="msg"></div>
+                            </div>
+                            <div class="form-register">
+                                <button type="button" class="btn btn-primary " name="btnregister" id="btnregister"
+                                  onclick="registervalidation();">Register Account</button>
+                                <hr>
+                              </div>
+                            <div class="form-google">
+                              <button type="button" class="btn btn-danger"><i class="fab fa-google"></i> Register
+                                With
+                                Google</button>
+                            </div>
+                            <div class="form-facebook">
+                              <button type="button" class="btn btn-primary"><i class="fab fa-facebook-f"></i>
+                                Register
+                                With
+                                Facebook</button>
+                              <hr>
+                            </div>
+                            <div class="link">
+                              <a href="/forget" class="text-link"><small>Forgot Password?</small></a><br>
+                              <a href="login.html" class="text-link"><small>Already have an Account!
+                                  Login?</small></a>
+                            </div>
+                        </div>
+                        </form>
+                </div>
+            </div>
+            <!-- Modal --<div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary">Save </button>
+                    </div>-->
+        </div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{%static 'js/valid.js' %}"></script>
+    <script src="{%static 'js/dash.js' %}"></script>
+</body>
+
+</html>
